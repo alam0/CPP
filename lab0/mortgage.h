@@ -1,0 +1,22 @@
+//mortgage.h
+//class definition for mortgage
+//Author: Aron Lam
+
+#ifndef MORTGAGE_H
+#define MORTGAGE_H
+
+class mortgage{
+	public:
+		mortgage();
+		mortgage(double, double , double );
+		void credit(double); // deducts value from the principal remaining
+		double getPrincipal(); //returns the current principal remaining
+		void amortize(); //calculates and displays a correct and clean amortization table. You will also be required to calculate the last payment properly
+	private:
+		double principal; //remaining principle owed
+		double rate; //interest rate
+		double payment; //desired monthly payment
+
+};
+
+#endif

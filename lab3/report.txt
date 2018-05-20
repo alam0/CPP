@@ -1,0 +1,22 @@
+Aron Lam
+Report for Lab 3
+	
+The inheritance approach is more natural than the composition approach because of the similarities between parent and child classes, especially if there are many derived classes. Trying to change the inheritance approach into a composition approach was actually difficult. I felt like I was asked to make my program less efficient.
+
+Part 3 of Part III
+	How: In order to make my base class abstract, I would make the member functions pure virtual functions and set them equal to 0. In order to make the derived classes concrete, I need to give unique definitions to the previously mentioned virtual functions in the derived classes. 
+	
+	Why: I would create an abstract base class if I don't need to use it to instantiate objects. If I needed to instantiate base class objects, I would NOT make the base class abstract with a pure virtual function. I need to give definitions to the pure virtual function in the derived classes because it has none in the abstract base class
+	
+	
+Report on Amazon Package 
+	
+From user's perspective:	
+	My program is meant to create instances of two-day packages and overnight packages and correctly calculate the shipping cost of each package. The program then calculates the total cost of a day's variety of packages. The program takes in strings for Name and Zipcode, doubles for Weight, costPerOunce, TwoDayCost, OvernightCost, and extraCostPerOunce and uses these variables to calculate and print out results.
+
+From programmer's perspective:
+	My program is structured with a base class called Package with private variables Name, Zipcode, Weight, and CostPerOunce. Get functions are used to use these variables in derived classes. This base class has a virtual functions called CalculateCost() and print(). The derived classes are TwoDayPackage and OvernightPackage which have their own private variables, get functions, CalculateCost, and print functions. The main driver function creates instances of different Twoday and Overnight packages and calculates and prints the package information. The main function also creates an array of packages and sums up today's shipping costs. The makefile uses the cpp files and creates an executable called Shipping.
+	
+Evaluating for correctness:
+	I checked the program's results with a calculator and the program produced corrrectly.
+

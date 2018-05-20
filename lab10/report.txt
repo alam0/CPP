@@ -1,0 +1,29 @@
+Aron Lam
+Part 1: twofiles.cpp: words.txt, cWords.txt
+Part 2: 
+- preprocessor.cpp: english.txt, chinese.txt, words.txt, cWords.txt
+-  jaccard.cpp: jaccard.txt, jaccard2.txt 
+- Puzzle10.h: main.cpp, makefile, easyPuzzle.txt
+
+Report For Lab 10
+
+From the User's Perspective:	
+	To use preprocessor.cpp, the user must enter the names of two language dictionaries (text files) and then the text file in question. The program then calculates which language the text file is in and outputs the result
+
+From the Programmer's Perspective:
+	The program prompts the user to enter the names of 3 text files and reads them into dict1, dict2, and file. Then it creates two sets for the dictionaries and a map for the words of the text file. Next, the program matches words of the desired text file to words in the dictionaries and determines which has more matches using a for loop and if/else statements.
+
+Evaluating for Correctness:
+	I evaluated the program for correctness by providing the two dictionaries with 60+ words and text files in either English or Chinese(pinyin). The program printed out correct results for all tests.
+
+Speculate how many words your dictionary should have:
+	The dictionaries should ideally have at least 10-15 words. That would provide a solid cushion for similar words and other errors in language detection. I put about 60 words into each of my dictionaries. I could use files from the web and a Unix pipeline to create dictionary text files.
+
+Is the possibilities vector more natural/easier to code or the set?
+	The set is more natural to code because of the functionality of the container. Instead of vectors of nine 0's or 1's, the set would only have the unique numbers that could be inserted into the board at respective spaces. 
+	
+Is it easier in C++11 or not?
+	Currently coding the Sudoku solver is not easier in C++11 since I am not familiar with C++11 yet. The new functions and syntax are interesting though.
+	
+	
+	

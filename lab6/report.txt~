@@ -1,0 +1,14 @@
+Aron Lam
+Report For Lab 6
+
+
+From the User's Perspective:
+	The program takes in a text file of numbers and creates a sudoku board. It then progressively solves the game of sudoku using the single-possibility method and the singleton method. It does this by entering valid entries and following the rules of the game. When the board is filled with valid entries, a final message and the solved board is displayed. 
+	
+From the Programmer's Perspective:
+	The program consists of a newer version of Puzzle.h, the templated class called Puzzle used in Lab 5. There most major change is the 3D vector of solutions where each square in the board's solutions are stored. There are also functions called updateSolutions, singlePossibility, singletonRow, singletonCol, singletonGrid, and sudokuSolver. Most of the functions use three or more for loops to loop through rows, columns, and numbers. The sudokuSolver function is the main driver function that calls other functions in a while loop to fill the board with valid entries. The implementation of the singleton method makes sense, but it does not seem to solve the easy or medium puzzles. 
+
+Evaluating for Correctness:
+	The single-possibility method worked to solve the easy puzzle from Lab 5, but I could not get the singleton method to work.  
+	
+	

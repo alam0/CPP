@@ -1,0 +1,17 @@
+Aron Lam
+Report For Lab 5
+
+
+From the User's Perspective:
+	The program takes in a text file of numbers or characters and interacts with the user in a game of sudoku. The user is prompted to enter his/her entry with three questions, 1. entry number, 2. row number, and 3. column number. With the user input, the program tests its validity and if valid adds the entry to the board. If the entry is not valid, it displays an error message respective to the reason. The program displays a "game over! you win!" message when the board is filled to capacity with valid entries.
+	 
+From the Programmer's Perspective:
+	The puzzle class is a templated class that may take in any data type. The private variables are an int 'size' and a 2D vector 'board'. The constructor for board takes in an int for size and string for the name of the text file it reads in. The 2D array is initialized to all 0's through two for loops and a helping 1D array. Implementation of reading the file in was difficult due to syntax and the process necessary. The contents of the text file are "copied" over to 'board' which the member functions work with. 
+	The main gameplay driving function is called playSudoku() and it contains a while loop that calls printBoard(), asks for user inputs, reads inputs, calls checkEntryValidity, and isBoardFull(). If the board is filled with valid entries, the user has won the game of sudoku. Checking the validity of an entry checks through designated rows and columns using for loops and then checks minigrids of the board using a strategy with integer division to find the minigrid's top left box. If the entry is found already in the entry's row/column/minigrid, a specific error message is displayed. 
+	
+Evaluating for Correctness:
+	I evaluated the program for correctness by testing it with provided sudoku and worduku files. To test the final validity of a complete board, I found a solved sudoku board and removed one entry, and reentered it. This resulted in the "Game Over! You Win!" message, as expected. I finally formatted the printBoard() function to clearly display the rows and columns of 'board'. 
+
+
+Extra Paragraph:
+	In the 9x9 sudoku board, checking the validity of an input and a completed board went well. Although checking through each row, column, and minigrid was tedious, the finished function worked well and also took care of determining if a puzzle was completed successfully. The printBoard() function after formatting does clearly display row and column numbers.   What did not go as well was figuring out the reading in of a text file. The syntax and process of that is not completely clear.   

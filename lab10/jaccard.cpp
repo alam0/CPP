@@ -1,0 +1,75 @@
+//jaccard.cpp determines the Jaccard similarity between two text files
+//uses jaccard.txt and jaccard2.txt with an expected Jaccard similarity of 11/35
+
+#include <iostream>
+#include <fstream>
+#include <stdio.h>
+#include <cctype>
+#include <string>
+#include <map>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+void toLowerCase(string &str) {
+	const int length = str.length();
+	for (int i=0; i < length; ++i){
+		str[i] = tolower(str[i]);
+	}
+} 
+
+int main(){
+	//create map
+	map<string, int> Map1; //map where key, value is string, int
+	map<string, int> Map2;
+	
+	char file1[30];
+	char file2[30];
+	//Ask user for names of two plain text files
+	cout << "Enter the name of the first plain text file: " << endl;
+	cin >> file1;
+	cout << "Enter the name of the second plain text file: " << endl;
+	cin >> file2;
+
+	ifstream infile1(file1);
+	ifstream infile2(file2);
+	//read input, keeping track of each word and how often it appears
+	string s, t;
+	while(infile1 >> s){
+		toLowerCase(s);
+		Map1[s]++;
+	}
+	while(infile2 >> t){
+		toLowerCase(t);
+		Map2[t]++;
+	}
+	//Find Union of the 2 maps
+	int total = 0;
+	map<string, int>::const_iterator it3;
+	for(it3 = Map2.begin(); it3 != Map2.end(); it3++){
+		total+=it3->second;
+	}
+	
+	//Find Intersection of the 2 maps
+	int matches = 0;
+	map<string, int>::const_iterator it;
+	map<string, int>::const_iterator it2;
+	for(it = Map1.begin(); it != Map1.end(); it++) {
+		total+=it->second;
+		for(it2 = Map2.begin(); it2 != Map2.end(); it2++) {
+			if(it->first == it2->first){
+				matches+=it->second;
+			}
+		}
+	}	
+	
+	//print results
+	cout << "The Jaccard similarity between the two files is " << matches << "/" << total << endl;
+	//close files
+	infile1.close();
+	infile2.close();
+	
+	return 0;
+}
+	
+	

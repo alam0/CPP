@@ -1,0 +1,9 @@
+lab8milestones.txt
+Group: STAN
+
+SDL Tutorials (3 hour min.): /10
+Program which moves shape across the screen: /10
+Inheritance Hierarchy in code: /10
+Install SDL: /10
+
+Total: /40

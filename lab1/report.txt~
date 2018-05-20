@@ -1,0 +1,4 @@
+Aron Lam
+Report.txt for Lab 1
+
+	From the user's perspective, my program is meant to simulate a game of Connect 4 with two players. The board is displayed with no 'X' or 'O' pieces at first. Player 1 and Player 2 each take turns entering the columns they would like to stack their pieces in. 

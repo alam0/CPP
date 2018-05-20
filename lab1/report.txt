@@ -1,0 +1,6 @@
+Aron Lam
+Report.txt for Lab 1
+
+	From the user's perspective, my program is meant to simulate a game of Connect 4 with two players. The board is displayed with no 'X' or 'O' pieces at first. Player 1 and Player 2 each take turns entering the columns they would like to stack their pieces in. 
+	Internally, there is a C4Col class which is responsible for storing discs in columns with different functions such as getDisc, addDisc, and isFull. Then another class called C4Board that uses dynamic memory allocation and creates a pointer to an array of C4Cols that the players add their discs into. The play function uses a variable "turn" and the display function repeatedly to simulate the gameplay.
+	I evaluated the program for correctness by comparing the results with what is expected from a Connect 4 game, and the rubric provided. The program does not have a correctly working private win function to determine a winner.

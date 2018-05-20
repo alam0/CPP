@@ -1,0 +1,19 @@
+#ifndef C4Board_H
+#define C4Board_H
+#include "C4Col.h"
+#include <iostream>
+using namespace std;
+
+class C4Board{
+	friend ostream &operator<<(ostream &, C4Board &); //needs &operator when returning address of a variable like board
+	public:
+		C4Board();
+		void display(); //display the current board insimple text
+		void play(); // allows two players to play a game
+	private:
+		int numCols;
+		C4Col board[7]; //create instances of C4Col in board array
+		void win(); //private helper function
+};
+
+#endif

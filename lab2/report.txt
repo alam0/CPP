@@ -1,0 +1,6 @@
+Aron Lam
+Report for Lab 2 Part3: Rational Class
+	From the user's perspective, program is meant to continuously display choices, take in user entered fractions, perform user chosen operations/functions, and display answers. A user may enter 0 when asked to quit.
+	Internally the class Rational is defined in rational.h which includes constructors, member functions, overloaded operators, private variables, and private functions. The four basic mathematical operators are overloaded so that they may take operate on two different instances of "Rational". They take in an instances and return them.
+	I evaluated the program for correctness through compilation and manually entering specific fractions and performing operations on them and comparing the results to results on paper. 
+

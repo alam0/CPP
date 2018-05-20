@@ -1,0 +1,5 @@
+Report for lab0
+Author: Aron Lam
+	
+	From the user's perspective my programs (main.cpp, mortgage.cpp, mortgage.h) are meant to easily store and process multiple personal mortgages. The user can construct a class using their own values "mortgage classname(principal, rate, payment);" or construct with default values with the "mortgage classname;" Then the user can "credit" amounts from a principal and amortize mortgages as well.
+	Internally, a class called mortgage is created in mortgage.h with constructors, member function prototypes, and variables. The mortgage.h file is used in mortgage.cpp where the constructors and functions are defined.

@@ -1,0 +1,11 @@
+Aron Lam
+Report for Lab 4
+
+From user's perspective:
+	From the User's perspective my program can perform MonkeySort or play BlackJack with the user. I will focus on the BlackJack portion. The user is dealt two cards and the dealer is dealt one card and hands are continuously displayed. The game then asks the user to enter whether he/she would like to hit or stand and the game proceeds and checks for a winner. If there is no winner, the player will be asked to hit or stand again until there is a winner. After displaying the number of wins/hands, the user is asked if he/she wants to play again. If not the program ends, if so the game continues.
+
+From programmer's perspective:
+	From the Programmer's perspective the blackjack program repeatedly takes in and uses user inputs and performs various checks for gameplay. There is a general "play" function called blackjack that uses multiple variables and functions to check these variables in while loop. Functions like Deal(), hitDealer(), checkForWin(), initialDeal(), and printHands() are used repeatedly to simulate a game of blackjack. The Deal function takes a value(card) from the stack and pops it off, keeping track of the number of cards. When the number of cards decreases to 15, 52 new card are pushed into the deque. hitDealer() stops dealing to the dealer when the amount (dealer) is greater than 16. checkForWin() was probably the hardest function to implement.
+	
+Evaluating for correctness:
+	I evaluated the program for correctness by playing the game multiple times. The results produced seemed correct, but I have some doubts about when and how to check for a win in BlackJack.

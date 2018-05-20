@@ -1,0 +1,10 @@
+The repository 'mario_game' currently has firstmilestone.cpp, a makefile, and some sprites
+
+Personal Time Log
+3 Hours SDL tutorial
+1 Hour makefile and firstmilestone.cpp
+3 Hours Group Meeting (Inheritance hierarchy)
+
+I worked on the makefile and firstmilestone.cpp. I went through a solid portion of the LazyFoo tutorials which took longer than I thought. In our group meeting we clearly laid out the inheritance hierarchy. The code for firstmilestone.cpp and the makefile is largely based on the tutorials we went through.
+
+This project to recreate Super Mario seems very challenging, but fun and worth the experience. My final project for Fundamentals of Computing I also worked with graphics. The gfx library provided by Professor Bualuan was great to work with. It's pretty exciting to take it the next level with SDL2 and a great group of friends.  The new syntax and commands to use SDL2 makes it confusing with new error messages, but office hours and piazza are very helpful. 
